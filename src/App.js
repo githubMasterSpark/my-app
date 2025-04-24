@@ -15,6 +15,9 @@ export default function MyApp(){
       <p>I have no idea what's going on and
           I used the create thingamabob before realizing it was
           depreciated???.</p>
+          <newline></newline>
+      <p>I copy pasted the button from a react tutorial; it does
+          nothing on purpose apparently.</p>
       <MyButton />
     </div>
   );
