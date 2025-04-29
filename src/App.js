@@ -23,7 +23,11 @@ function MyButton() {
   );
 }
 
-export default function MyApp(){
+function Home() {
+  return <p>This is the home page.</p>;
+}
+
+export default function MyApp() {
   return (
     <Router>
       <div>
@@ -32,14 +36,10 @@ export default function MyApp(){
         <p>This is a working button that links to the About page.</p>
         <MyButton />
         <Routes>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/">
-            <p>This is the home page.</p>
-          </Route>
+          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
   );
-};
+}
