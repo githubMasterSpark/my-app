@@ -1,6 +1,10 @@
 import './App.css';
 
 function MyButton() {
+  alert("test");
+  const handleClick = () => {
+    alert("this is a button, which should take to another page i think");
+  };
   return (
     <button>
       I'm a button
