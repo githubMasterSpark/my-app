@@ -1,13 +1,12 @@
 import './App.css';
 
 function MyButton() {
-  alert("test");
   const handleClick = () => {
     alert("this is a button, which should take to another page i think");
   };
   return (
-    <button>
-      I'm a button
+    <button onClick={handleClick}>
+      test button
     </button>
   );
 }
@@ -20,8 +19,7 @@ export default function MyApp(){
           I used the create thingamabob before realizing it was
           depreciated???.</p>
           <newline></newline>
-      <p>I copy pasted the button from a react tutorial; it does
-          nothing on purpose apparently.</p>
+      <p>This is a working button that does not link to anything.</p>
       <MyButton />
     </div>
   );
